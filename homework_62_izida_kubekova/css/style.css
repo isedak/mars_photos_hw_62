@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-container {
+    margin: 0 auto;
+    position: relative;
+}
+
+.image-container {
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.image-box-block {
+    display: block;
+    overflow: hidden;
+    padding-bottom: 100%;
+}
+
+.main-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.title {
+    margin-bottom: 13px;
+    font-size: 24px;
+    font-family: 'Jura', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    bottom: 50%;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    align-items: center;
+}
+
+.columns-box-container {
+    width: 466px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+    border-radius: 1px;
+    box-shadow: 4px 4px 9px 0px rgba(50, 50, 50, 0.70);
+}
+
+.columns-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1.5rem;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    margin: 22px 0 6px 0;
+    width: 160px;
+    flex-shrink: 0;
+}
+
+.info {
+    color: rgba(142, 142, 142, 1);
+    margin-top: 8px;
+}
+
+.form-row-custom {
+    margin: 6px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.margin-bottom-1 {
+    margin-bottom: 1rem;
+}
+
+.margin-bottom-tiny {
+    margin-bottom: 3px;
+}
+
+.input-row {
+    align-items: center;
+    background: rgba(250, 250, 250, 1);
+    border: 1px solid rgba(219, 219, 219, 1);
+    border-radius: 1px;
+    display: flex;
+    font-size: 14px;
+    width: 100%;
+}
+
+.input-text {
+    color: rgba(142, 142, 142, 1);
+    font-size: 12px;
+    height: 36px;
+    line-height: 36px;
+    background: rgba(250, 250, 250, 1);
+    border: 0;
+    outline: 0;
+    overflow: hidden;
+    padding: 0 8px 0 8px;
+    text-overflow: ellipsis;
+    flex-grow: 1;
+}
+
+.body-text {
+    color: rgba(142, 142, 142, 1);
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.label-color-mars {
+    color: rgb(143 49 24);
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.weight-700 {
+    font-weight: 700;
+}
+
+.weight-400 {
+    font-weight: 400;
+}
+
+.form-custom {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-custom {
+    background-color: rgb(220, 220, 220);
+    border: 3px solid rgb(143 49 24);
+    border-radius: 1px;
+    color: black;
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    font-family: 'Jura', sans-serif;
+    font-weight: 700;
+    line-height: 18px;
+    padding: 5px 5px;
+    min-height: 38px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.btn-back {
+    width: 100px;
+    margin: 1rem;
+    background-color: rgb(220, 220, 220);
+    border: 3px solid rgb(143 49 24);
+    border-radius: 1px;
+    color: black;
+    display: block;
+    font-size: 16px;
+    font-family: 'Jura', sans-serif;
+    font-weight: 700;
+    line-height: 18px;
+    padding: 5px 5px;
+    min-height: 38px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.display-none {
+    display: none;
+}
+
+.form-row-custom-margin-b-0 {
+    margin: 6px 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.images-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: black;
+}
+
+.images-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-column {
+    flex: 0 0 30%;
+}
+
+.image-column-block {
+    display: block;
+    position: relative;
+    margin: 8px;
+    flex: 1 0 0;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 1px;
+}
+
+.image-small-box {
+    display: block;
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+}
+
+.small-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.tiny-logo {
+    margin-top: 1rem;
+    width: 98px;
+    height: auto;
+    align-self: center;
+    display: block;
+}

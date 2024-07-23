@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Homework_62_izida_kubekova</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="main-container" id="start-page">
+            <div class="image-container">
+                <div id="image-of-a-day" class="image-box-block">
+                </div>
+            </div>
+            <div class="form-container">
+                <div class="columns-box-container">
+                    <h2 class="title">Фото с поверхности Марса</h2>
+                    <div class="columns-box">
+                        <div class="left-column">
+                            <form class="form-custom" action="">
+                                <label class="label-color-mars" for="rover-name">Выберите марсоход</label>
+                                <div class="form-row-custom">
+                                    <div class="input-row">
+                                        <select class="input-text" id="rover-name">
+                                            <option class="input-text" value="Curiosity" selected>Curiosity</option>
+                                            <option class="input-text" value="Opportunity">Opportunity</option>
+                                            <option class="input-text" value="Spirit">Spirit</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <label class="label-color-mars" for="earth-date">Выберите Земную дату (когда марсоход был активен, смотрите справку)</label>
+                                <div class="form-row-custom">
+                                    <div class="input-row">
+                                        <input id="earth-date" placeholder="ГГГГ-ММ-ДД" type="text" class="input-text">
+                                    </div>
+                                </div>
+                                <label class="label-color-mars" for="camera">Выберите камеру</label>
+                                <div class="form-row-custom">
+                                    <div class="input-row">
+                                        <select class="input-text" id="camera">
+                                            <option class="input-text" value="FHAZ" selected>Передняя камера (FHAZ)</option>
+                                            <option class="input-text" value="RHAZ">Задняя камера (RHAZ)</option>
+                                            <option class="input-text" value="NAVCAM">Навигационная камера (NAVCAM)</option>
+                                            <option class="input-text" value="MAST">Мачта (MAST) только Curiosity</option>
+                                            <option class="input-text" value="PANCAM">Панорамная камера (PANCAM)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-row-custom-margin-b-0">
+                                    <button id="submit-form" class="btn-custom margin-bottom-1" type="submit">Выбрать</button>
+                                </div>
+                                <p class="label-color-mars margin-bottom-tiny" id="error"></p>
+                            </form>
+                        </div>
+                        <div class="right-column">
+                            <div id="info-manifest" class="btn-custom">Справка</div>
+                            <img src="https://api.nasa.gov/assets/img/favicons/favicon-192.png" class="tiny-logo" alt="nasa-logo">
+                            <div id="info" class="info display-none">
+                                <div class="rover-info-box">
+                                    <form action="">
+                                        <div class="form-row-custom">
+                                            <div class="input-row">
+                                                <select class="input-text" id="rover-name-manifest">
+                                                        <option class="input-text" value="Curiosity" selected>Curiosity</option>
+                                                        <option class="input-text" value="Opportunity">Opportunity</option>
+                                                        <option class="input-text" value="Spirit">Spirit</option>
+                                                </select>
+                                                <div id="submit-manifest" type="submit" class="btn-custom">Ok</div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <p class="weight-700">Марсоход: <span class="weight-400" id="name"></span></p>
+                                <p class="weight-700">Дата запуска: <span class="weight-400" id="launch-date"></span></p>
+                                <p class="weight-700">Дата посадки: <span class="weight-400" id="landing-date"></span></p>
+                                <p class="weight-700">Дата последнего снимка: <span class="weight-400" id="max-date"></span></p>
+                                <p class="weight-700">Кол-во снимков: <span class="weight-400" id="total-photos"></span></p>
+                                <p class="weight-700">Статус миссии: <span class="weight-400" id="status"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="images-container" class="display-none">
+            <div class="image-container">
+                <div class="images-container">
+                    <div class="images-row">
+                        <div id="back" class="btn-back">Назад</div>
+                    </div>
+                    <div class="images-row">
+                        <h2 class="title info" id="message"></h2>
+                    </div>
+                    <div class="images-row" id="images-row">
+                    </div>
+                    <div class="images-row">
+                        <a href="#back" class="btn-back">Наверх</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
